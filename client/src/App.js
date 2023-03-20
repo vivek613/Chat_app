@@ -1,10 +1,15 @@
-import logo from "./logo.svg";
+import { Route, Routes } from "react-router-dom";
+import Chat from "./pages/Chat";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <>
-      <Route></Route>
-    </>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/chats" element={<Chat />} />
+      </Routes>
+    </div>
   );
 }
 
